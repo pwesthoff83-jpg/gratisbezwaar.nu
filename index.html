@@ -4,312 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GratisBezwaar.nu | Zeker van uw recht bij elke verkeersboete</title>
-    <meta name="description" content="Gratis en professioneel bezwaar tegen uw verkeersboete. Snel, zorgvuldig en juridisch onderbouwd. Upload uw boete en laat uw zaak gratis beoordelen.">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-gb-32.png">
-    <link rel="stylesheet" href="styles.css?v=1.0.0">
+    <meta name="description" content="Gratis bezwaar tegen verkeersboetes. Upload uw boete en laat uw zaak gratis beoordelen.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="fade-in">
 
 <header class="header">
     <div class="container header-container">
+
         <div class="logo-wrap">
-            <a href="#top">
-                <!-- Sla je logo op als bijvoorbeeld assets/images/logo-gratisbezwaar.png -->
+            <a href="index.html">
                 <img src="assets/images/logo-gratisbezwaar.png" alt="Logo GratisBezwaar.nu" class="site-logo">
             </a>
-            <div class="logo-text">
-                <span class="brand-name">GratisBezwaar.nu</span>
-                <span class="brand-tagline">Zeker van uw recht bij elke verkeersboete</span>
-            </div>
         </div>
 
-        <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
         <nav class="main-nav" id="mainNav">
             <ul>
                 <li><a href="#hoe-het-werkt">Hoe het werkt</a></li>
-                <li><a href="#boetes">Soorten boetes</a></li>
+                <li><a href="#boetes">Boetes</a></li>
                 <li><a href="#waarom">Waarom bezwaar</a></li>
-                <li><a href="#over">Over ons</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#upload" class="nav-cta">Upload uw boete</a></li>
+                <li><a href="#upload" class="nav-cta">Upload boete</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<main id="top">
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Zeker van uw recht bij elke verkeersboete</h1>
-                <p>
-                    Professioneel bezwaar tegen snelheidsboetes, rood licht, telefoon, parkeren en andere verkeersboetes.
-                    Volledig gratis, zorgvuldig en juridisch onderbouwd.
-                </p>
-                <div class="hero-actions">
-                    <a href="#upload" class="btn btn-primary">Upload uw boete</a>
-                    <a href="#waarom" class="btn btn-ghost">Wanneer heeft bezwaar zin?</a>
-                </div>
-                <div class="hero-trust">
-                    <span class="hero-badge">100% gratis bezwaar</span>
-                    <span class="hero-badge">Onafhankelijk & zorgvuldig</span>
-                </div>
-            </div>
-            <div class="hero-card">
-                <h2>Laat uw boete gratis beoordelen</h2>
-                <p>Upload uw boete, wij beoordelen uw zaak en maken een sterk onderbouwd bezwaar.</p>
-                <ul class="hero-list">
-                    <li>✔ Snelheids- en flitsboetes</li>
-                    <li>✔ Rood licht & trajectcontrole</li>
-                    <li>✔ Telefoon, gordel & verkeerstekens</li>
-                    <li>✔ Parkeer- en WAHV-boetes</li>
-                </ul>
-                <a href="#upload" class="btn btn-full">Start beoordeling</a>
+        <div class="hero-text">
+            <h1>Zeker van uw recht bij elke verkeersboete</h1>
+            <p>Professioneel bezwaar tegen verkeersboetes. Snelle beoordeling en 100% gratis.</p>
+
+            <div class="hero-actions">
+                <a href="#upload" class="btn btn-primary">Upload uw boete</a>
             </div>
         </div>
-    </section>
 
-    <!-- USP BLOK -->
-    <section class="section bg-cream" id="usp">
-        <div class="container">
-            <h2>Waarom GratisBezwaar.nu?</h2>
-            <div class="grid usp-grid">
-                <article class="card">
-                    <h3>Gratis & onafhankelijk</h3>
-                    <p>U betaalt niets voor het opstellen en indienen van het bezwaar. Geen verborgen kosten, geen kleine lettertjes.</p>
-                </article>
-                <article class="card">
-                    <h3>Sterk juridisch onderbouwd</h3>
-                    <p>Geen standaard tekstje: uw bezwaar wordt zorgvuldig opgebouwd en juridisch onderbouwd op basis van uw situatie.</p>
-                </article>
-                <article class="card">
-                    <h3>Snel & duidelijk geregeld</h3>
-                    <p>Upload uw boete en toelichting, wij doen de rest en houden u op de hoogte van de vervolgstappen.</p>
-                </article>
-                <article class="card">
-                    <h3>Eerlijk advies</h3>
-                    <p>We zijn transparant: als een bezwaar weinig kans van slagen heeft, dan zeggen we dat ook eerlijk.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOE HET WERKT -->
-    <section class="section" id="hoe-het-werkt">
-        <div class="container">
-            <h2>Hoe het werkt</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Upload uw boete</h3>
-                    <p>Maak duidelijke foto’s of upload een PDF van uw boete en eventuele extra foto’s of toelichting van de situatie.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Wij beoordelen uw zaak</h3>
-                    <p>Wij bekijken uw boete juridisch en praktisch, en beoordelen of bezwaar zinvol is.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>U ontvangt uw bezwaar</h3>
-                    <p>U krijgt een juridisch sterk onderbouwd bezwaar met duidelijke instructies, of we dienen het bezwaar namens u in.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>U blijft op de hoogte</h3>
-                    <p>U ontvangt updates over de status van uw bezwaar en de uiteindelijke beslissing.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOORTEN BOETES -->
-    <section class="section bg-cream" id="boetes">
-        <div class="container">
-            <h2>Voor welke boetes kunt u bij ons terecht?</h2>
-            <div class="grid boete-grid">
-                <article class="card">
-                    <h3>Snelheid & trajectcontrole</h3>
-                    <p>Flitspalen, trajectcontroles en lasercontroles. Onder meer bij onduidelijke of ontbrekende bebording of twijfel over de meting.</p>
-                </article>
-                <article class="card">
-                    <h3>Rood licht & kruispunten</h3>
-                    <p>Boetes door rood licht, sensoren en complexe kruispunten waarbij de situatie niet altijd helder is.</p>
-                </article>
-                <article class="card">
-                    <h3>Telefoon, gordel & verkeerstekens</h3>
-                    <p>Boetes voor telefoon vasthouden, geen gordel dragen of het niet opvolgen van verkeerstekens of inhaalverboden.</p>
-                </article>
-                <article class="card">
-                    <h3>Parkeerboetes & APV</h3>
-                    <p>Fout parkeren, onduidelijke borden, hoge parkeerdruk of situaties waarin willekeurig lijkt te worden gehandhaafd.</p>
-                </article>
-                <article class="card">
-                    <h3>Overige WAHV-boetes</h3>
-                    <p>Alle boetes die vallen onder de Wet administratiefrechtelijke handhaving verkeersvoorschriften (WAHV).</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- WAAROM BEZWAAR WERKT -->
-    <section class="section" id="waarom">
-        <div class="container">
-            <h2>Waarom bezwaar indienen vaak zinvol is</h2>
-            <div class="two-column">
-                <div>
-                    <p>
-                        Veel verkeersboetes worden geautomatiseerd of onder tijdsdruk opgelegd. Daardoor komen fouten regelmatig voor. Denk aan:
-                    </p>
-                    <ul class="bullet-list">
-                        <li>Foutieve of onvolledige metingen</li>
-                        <li>Verkeerd geplaatste of slecht zichtbare flitsers</li>
-                        <li>Onduidelijke of tegenstrijdige bebording</li>
-                        <li>Onjuiste verslaglegging door handhaving</li>
-                        <li>Verkeerde locatie- of kentekenregistratie</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>
-                        Met een sterk, juridisch onderbouwd bezwaar staat u veel sterker dan met een korte, emotionele reactie.
-                        Wij combineren praktijkervaring met juridische kennis, zodat uw zaak serieus wordt genomen.
-                    </p>
-                    <div class="highlight-box">
-                        <p><strong>U staat sterker dan u denkt.</strong><br>Heeft u twijfels over uw boete? Laat uw zaak gratis beoordelen.</p>
-                        <a href="#upload" class="btn btn-primary small">Laat mijn boete beoordelen</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OVER ONS -->
-    <section class="section bg-cream" id="over">
-        <div class="container">
-            <h2>Over GratisBezwaar.nu</h2>
-            <div class="two-column">
-                <div>
-                    <p>
-                        GratisBezwaar.nu helpt automobilisten die twijfelen over de rechtmatigheid van hun verkeersboete.
-                        Wij vinden dat niemand een boete zou moeten betalen die niet klopt, en dat juridische hulp toegankelijk
-                        moet zijn voor iedereen.
-                    </p>
-                    <p>
-                        Onze werkwijze is onafhankelijk, zorgvuldig en transparant. U krijgt eerlijk advies over de kans van slagen,
-                        zonder loze beloftes.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        GratisBezwaar.nu is een zelfstandig juridisch initiatief binnen <strong>ZekerOpWeg</strong>. Daardoor
-                        combineren we praktijkervaring uit de mobiliteitswereld met juridische kennis rondom verkeersboetes,
-                        zonder belangen bij overheid of verzekeraars.
-                    </p>
-                    <p class="subtle">
-                        Let op: wij geven geen individueel juridisch advies op het niveau van een advocaat, maar richten ons op
-                        zorgvuldig opgestelde bezwaarschriften binnen de geldende procedures.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-        <div class="container">
-            <h2>Veelgestelde vragen</h2>
-            <div class="faq">
-                <details>
-                    <summary>Is het echt gratis?</summary>
-                    <p>Ja. Het opstellen van het bezwaar en onze beoordeling van uw boete zijn volledig gratis. U betaalt ons niets voor deze dienst.</p>
-                </details>
-                <details>
-                    <summary>Hoe snel hoor ik iets na het uploaden van mijn boete?</summary>
-                    <p>In de meeste gevallen ontvangt u binnen 24 tot 48 uur een reactie met onze beoordeling en het vervolg.</p>
-                </details>
-                <details>
-                    <summary>Heeft het bij elke boete zin om bezwaar in te dienen?</summary>
-                    <p>Niet altijd. Soms is de kans op succes klein. In dat geval zijn we daar eerlijk over, zodat u een weloverwogen keuze kunt maken.</p>
-                </details>
-                <details>
-                    <summary>Dienen jullie het bezwaar voor mij in?</summary>
-                    <p>In veel gevallen kunnen wij het bezwaar namens u indienen. Lukt dat niet, dan ontvangt u een duidelijke uitleg en het complete bezwaar, zodat u het eenvoudig zelf kunt indienen.</p>
-                </details>
-                <details>
-                    <summary>Wat gebeurt er als mijn bezwaar wordt afgewezen?</summary>
-                    <p>Dan informeren wij u over eventuele vervolgstappen, zoals beroep bij de rechtbank, en of dat in uw situatie verstandig is.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- UPLOAD / CALL TO ACTION -->
-    <section class="section section-accent" id="upload">
-        <div class="container upload-container">
-            <div>
-                <h2>Ontving u een verkeersboete? Laat uw zaak gratis beoordelen.</h2>
-                <p>Upload uw boete en beschrijf kort waarom u denkt dat deze onterecht is. Wij doen de rest.</p>
-                <ul class="bullet-list">
-                    <li>✔ Snelheids-, rood licht- en telefoonboetes</li>
-                    <li>✔ Parkeerboetes en WAHV-zaken</li>
-                    <li>✔ Eerlijk en onafhankelijk advies</li>
-                </ul>
-            </div>
-            <form class="upload-form">
-                <label class="field">
-                    <span>Naam</span>
-                    <input type="text" name="naam" placeholder="Uw naam">
-                </label>
-                <label class="field">
-                    <span>E-mailadres</span>
-                    <input type="email" name="email" placeholder="uw@emailadres.nl">
-                </label>
-                <label class="field">
-                    <span>Kenteken</span>
-                    <input type="text" name="kenteken" placeholder="XX-999-X">
-                </label>
-                <label class="field">
-                    <span>Korte toelichting</span>
-                    <textarea name="toelichting" rows="4" placeholder="Beschrijf kort waarom u denkt dat de boete onterecht is."></textarea>
-                </label>
-                <label class="field">
-                    <span>Upload uw boete (foto of PDF)</span>
-                    <input type="file" name="boete" accept=".jpg,.jpeg,.png,.pdf">
-                </label>
-                <button type="submit" class="btn btn-primary btn-block">Verstuur voor beoordeling</button>
-                <p class="form-note">Dit is een voorbeeldformulier. Koppel hier later je eigen verwerkings- of e-mailsysteem aan.</p>
-            </form>
-        </div>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <div class="container footer-container">
-        <div>
-            <strong>GratisBezwaar.nu</strong><br>
-            Zeker van uw recht bij elke verkeersboete.
-        </div>
-        <div class="footer-links">
-            <a href="#top">Terug naar boven</a>
-            <a href="#">Privacy &amp; disclaimer</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="footer-meta">
-            <span>Een initiatief binnen ZekerOpWeg</span>
-        </div>
     </div>
-</footer>
+</section>
 
 <script>
     function toggleMenu() {
-        var nav = document.getElementById('mainNav');
-        nav.classList.toggle('open');
+        document.getElementById('mainNav').classList.toggle('open');
     }
 </script>
 
