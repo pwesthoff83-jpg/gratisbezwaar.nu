@@ -20,11 +20,12 @@
     --shadow-strong: 0 8px 30px rgba(0,0,0,0.18);
 }
 
-body {
+html, body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    min-height: 100%;
 }
 
 /* Containers */
@@ -45,7 +46,7 @@ body {
 }
 
 /* ----------------------------------------------------
-   HEADER & LOGO FIX — PREMIUM OPTIMALISATIE
+   HEADER & NAVBAR
 ---------------------------------------------------- */
 .header {
     position: sticky;
@@ -56,36 +57,38 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Perfecte uitlijning & spacing */
 .header-container {
     display: flex;
-    align-items: center;               /* ✔ perfecte vertical alignment */
+    align-items: center;
     justify-content: space-between;
-    padding: 0.65rem 0;                /* ✔ rustiger, premium */
+    padding: 0.65rem 0;
     gap: 2rem;
 }
 
-/* Logo en spacing */
+/* Logo + spacing */
 .logo-wrap {
     display: flex;
     align-items: center;
-    gap: 1rem;                         /* ✔ betere balans met menu */
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
+/* Logo groot en passend in navbar */
 .site-logo {
-    height: 82px;                      /* ✔ duidelijk zichtbaar */
+    height: 110px;
     width: auto;
     object-fit: contain;
     display: block;
     margin: 0;
-    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25)); /* ✨ premium subtiele schaduw */
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));
 }
 
-/* Navigatie perfect gecentreerd */
+/* Navigatie */
 .main-nav ul {
     list-style: none;
     display: flex;
-    align-items: center;               /* ✔ navigation gelijk met logo */
+    align-items: center;
     gap: 1.5rem;
     font-size: .95rem;
 }
@@ -119,25 +122,21 @@ body {
     background: linear-gradient(135deg, #fffaf2, #f4ebd7);
 }
 
-/* Mobiel header clean houden */
-@media (max-width: 780px) {
-    .header-container {
-        padding: 0.5rem 0;
-    }
-    .site-logo {
-        height: 64px;                   /* compact maar duidelijk */
-    }
-    .logo-text {
-        display: none;
-    }
+/* Burger button (mobiel) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 
 /* ----------------------------------------------------
-   HERO SECTION (PNG FIX)
+   HERO SECTION
 ---------------------------------------------------- */
 .hero {
     position: relative;
-    min-height: 72vh;
+    min-height: 64vh; /* iets lager om scroll-issues te voorkomen */
     color: #fff;
     background-image:
         linear-gradient(to bottom, rgba(7,14,25,0.88), rgba(7,14,25,0.94)),
@@ -226,7 +225,9 @@ body {
     text-align: center;
 }
 
-/* BUTTONS */
+/* ----------------------------------------------------
+   BUTTONS
+---------------------------------------------------- */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -251,15 +252,73 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* Rest van je CSS blijft exact zoals je aanleverde */
-/* --- LOGO FIX OVERRIDE --- */
-.site-logo {
-    height: 90px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    display: block !important;
+.btn-ghost {
+    border-color: rgba(255,255,255,0.35);
+    color: #fff;
+    background: transparent;
 }
 
-.logo-wrap img {
-    height: 90px !important;
+.btn-ghost:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE NAV & HERO
+---------------------------------------------------- */
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 3rem;
+    }
+    .hero-card {
+        order: -1;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu-toggle {
+        display: block;
+        color: var(--navy);
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        display: none;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: .75rem 1.1rem 1.1rem;
+    }
+
+    .nav-cta {
+        margin-top: .4rem;
+    }
+
+    .header-container {
+        padding: 0.5rem 0;
+    }
+
+    .site-logo {
+        height: 75px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero {
+        min-height: 0;
+    }
+    .hero-text h1 {
+        font-size: 1.75rem;
+    }
 }
