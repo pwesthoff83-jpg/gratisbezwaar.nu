@@ -80,6 +80,36 @@ body {
     flex-direction: column;
     line-height: 1.1;
 }
+/* --- LOGO FIX --- */
+.site-logo {
+    height: 64px;       /* groter, premium feel */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* verwijder onzichtbare spacing van wrapper */
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* zorg dat header net iets meer ruimte krijgt nu het logo groter is */
+.header-container {
+    padding: 0.55rem 0;
+    align-items: center;
+}
+
+/* tekst netjes verticaal gecentreerd naast groter logo */
+.logo-text {
+    line-height: 1.05;
+    margin-top: 2px;  /* subtiele alignment fix */
+}
 
 .brand-name {
     font-weight: 600;
