@@ -125,11 +125,9 @@ body {
     position: relative;
     min-height: 72vh;
     color: #fff;
-
     background-image:
         linear-gradient(to bottom, rgba(7,14,25,0.88), rgba(7,14,25,0.94)),
-        url("assets/images/hero-verkeersboete.png"); /* ✔ PNG FIX */
-
+        url("assets/images/hero-verkeersboete.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -168,6 +166,52 @@ body {
     gap: .75rem;
     margin: 1.5rem 0 1rem;
 }
+
+.hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    font-size: .8rem;
+    opacity: .9;
+}
+
+.hero-badge {
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: .3rem .7rem;
+}
+
+.hero-card {
+    background: rgba(7,14,25,0.92);
+    border-radius: 16px;
+    padding: 1.5rem 1.7rem;
+    box-shadow: var(--shadow-strong);
+    border: 1px solid rgba(201,178,124,0.32);
+}
+
+.hero-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: .4rem;
+}
+
+.hero-card p {
+    font-size: .95rem;
+    margin-bottom: .8rem;
+}
+
+.hero-list {
+    list-style: none;
+    font-size: .9rem;
+    margin-bottom: 1.2rem;
+}
+.hero-list li { margin-bottom: .25rem; }
+
+.btn-full {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
 
 /* BUTTONS */
 .btn {
