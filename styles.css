@@ -252,3 +252,14 @@ body {
 }
 
 /* Rest van je CSS blijft exact zoals je aanleverde */
+/* --- LOGO FIX OVERRIDE --- */
+.site-logo {
+    height: 90px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.logo-wrap img {
+    height: 90px !important;
+}
